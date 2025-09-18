@@ -127,7 +127,7 @@
                 <!-- Footer -->
                 <div class="modal-footer d-flex justify-content-between px-4">
                     <button type="button" class="btn btn-outline-secondary px-4 py-2" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary px-4 py-2">🚀 Submit Inquiry</button>
+                    <button type="submit" class="btn btn-primary px-4 py-2">🚀 Submit Inquiry.</button>
                 </div>
 
                 </div>
