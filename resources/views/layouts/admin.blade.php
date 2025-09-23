@@ -437,7 +437,14 @@ document.addEventListener("DOMContentLoaded", function() {
     updateSubSections();
 });
 </script>
-
+<script src="https://cdn.ckeditor.com/ckeditor5/41.2.0/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create(document.querySelector('#description'))
+        .catch(error => {
+            console.error(error);
+        });
+</script>
 </body>
 <!--end::Body-->
 
