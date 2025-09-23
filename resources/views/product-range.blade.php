@@ -61,7 +61,7 @@
                                         <figcaption class="default-overlay-outer">
                                             <div class="inner">
                                                 <div class="content-layer">
-                                                    <a class="this-link btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal">Enquery</a>
+                                                    <a class="this-link btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Enquery</a>
                                                     <a class="btn btn-secondary mt-5" href="/details/{{ encrypt($pr->id) }}">Details&nbsp;&nbsp;&nbsp;</a>
                                                  </div>
                                             </div>
