@@ -19,12 +19,17 @@
                         <li class="ml-3 font-weight-bold"><a href="/">Home</a></li>
                         <li class="ml-3 font-weight-bold"><a href="about">About Us</a></li>
                         <li class="font-weight-bold"><a href="contact.html#">Offering</a>
-                                    <ul>
-                                        @foreach ($nav as $nv)
-                                            <li><a href="/product-range/{{ encrypt($nv->id) }}">{{ $nv->product_cat }}</a></li>
-                                        @endforeach
-                                    </ul>
-                                </li>
+                            <ul class="nav-list">
+                                @foreach ($nav as $nv)
+                                    <li>
+                                        <a href="/product-range/{{ encrypt($nv->id) }}">
+                                            <img src="{{ asset($nv->product_img) }}" alt="">
+                                            {{ $nv->product_cat }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </li>
                         <li class="ml-3 font-weight-bold"><a href="contact">Contact</a></li>
                         <li class="ml-3 font-weight-bold">
                             <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">

@@ -23,6 +23,8 @@
                                                     <th style="width: 10px">#</th>
                                                     <th>Product Category</th>
                                                     <th>Provide Solution</th>
+                                                    <th>Layout</th>
+                                                    <th>Brochure</th>
                                                     <th>All Solution</th>
                                                     <th>Image</th>
                                                     <th>Description</th>
@@ -33,8 +35,10 @@
                                                 @foreach ($data as $pd)
                                                     <tr class="align-middle">
                                                         <td>{{ $loop->index+1 }}</td>
-                                                        <td>{{ $pd->category->product_cat }}</td>
+                                                        <td>{{ $pd->category->product_cat ?? '' }}</td>
                                                         <td>{{ $pd->solutions->solution ?? '' }}</td>
+                                                        <td><img src="{{ asset('storage/' . $pd->layout) }}" alt="" width="80"></td>
+                                                        <td><a href="{{ asset('storage/' . $pd->pdf) }}" target="_blank">Download</a></td>
                                                         <td>
                                                             @if($pd->multi_img)
                                                                 @foreach(json_decode($pd->multi_img, true) as $img)
@@ -111,6 +115,19 @@
                                 @endforeach
                             </select>
                         </div>
+
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label">Brochure Upload</label>
+                            <input type="file" name="pdf" class="form-control" />
+                            <div id="pdf" class="mt-2"></div>
+                        </div>
+
+                         <div class="mb-3 col-md-6">
+                            <label class="form-label">Layout Upload</label>
+                            <input type="file" name="layout" class="form-control" />
+                            <div id="layout" class="mt-2"></div>
+                        </div>
+
                         <div class="mb-3 col-md-6">
                             <label class="form-label">Image Upload</label>
                             <input type="file" name="img" class="form-control" />

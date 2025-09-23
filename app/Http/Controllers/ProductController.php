@@ -91,11 +91,23 @@ class ProductController extends Controller
                 'multi_img.*'         => 'image|mimes:jpg,jpeg,png,webp',
                 'description'         => 'nullable',
                 'img'                 => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+                'layout'              => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+                 'pdf'                 => 'nullable|mimes:pdf', // max 5MB
             ]);
 
             // Handle single image upload
             if ($request->hasFile('img')) {
                 $validated['img'] = $request->file('img')->store('products', 'public');
+            }
+
+            // Handle single image upload
+            if ($request->hasFile('layout')) {
+                $validated['layout'] = $request->file('layout')->store('layout', 'public');
+            }
+
+            // Handle single image upload
+            if ($request->hasFile('pdf')) {
+                $validated['pdf'] = $request->file('pdf')->store('pdf', 'public');
             }
 
             // Handle multiple images

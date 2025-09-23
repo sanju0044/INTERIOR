@@ -81,8 +81,15 @@
                                     <p class="mb-4">{!! $data->description !!}</p>
                                 </div>
                             </div>
+
+                            <div class="col-md-12">
+                                <div class="service-text">
+                                    <h3 class="mt-4">Layout</h3>
+                                    <img src="{{ asset('storage/' . $data->layout) }}" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="departments-details position-relative">
+                        <div class="departments-details position-relative mt-5">
                             <!-- Blurred Content -->
                             <div class="">
                                 <h3>PLAN AND <span class="font-weight-bold">PRICE </span></h3>
