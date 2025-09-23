@@ -102,7 +102,7 @@ class ProductController extends Controller
             $multiImgPaths = [];
             if ($request->hasFile('multi_img')) {
                 foreach ($request->file('multi_img') as $image) {
-                    $multiImgPaths[] = $image->store('products/multi', 'public');
+                    $multiImgPaths[] = $image->store('multi', 'public');
                 }
                 $validated['multi_img'] = json_encode($multiImgPaths); // Save as JSON
             }

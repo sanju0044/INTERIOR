@@ -54,6 +54,30 @@
                                     <div class="col-md-12 pdb-2">
                                         <img src="{{ asset('storage/' . $data->img) }}" alt="">
                                     </div>
+                                     <div class="completed-projects pb-0">
+                                        <div class="container">
+                                            {{-- <h3>COMPLETED <span class="font-weight-bold">PROJECTS </span></h3> --}}
+                                            <div class="row">
+                                                @php
+                                                    $images = is_string($data->multi_img) ? json_decode($data->multi_img, true) : $data->multi_img;
+                                                @endphp
+
+                                                @if (!empty($images))
+                                                    @foreach ($images as $img)
+                                                        <div class="col-md-2 cons hover-effect">
+                                                            <div class="choos">
+                                                                <a href="{{ asset('storage/' . $img) }}" data-rel="lightcase:gallery">
+                                                                    <figure>
+                                                                        <img src="{{ asset('storage/' . $img) }}" alt="product image" class="img-fluid" style="height:100px;">
+                                                                    </figure>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    @endforeach
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="service-text">
                                     <h3 class="mt-4">{{ $data->category->product_cat }}  <span class="font-weight-bold"> {{ $data->solutions->solution }}</span></h3>
@@ -117,34 +141,6 @@
                                         </div>
                                     </div>
                                      <a class="this-link btn btn-lg btn-block btn-primary mt-5" href="residental-interior.html" data-toggle="modal" data-target="#exampleModal"> 🔒 For The Best Price</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="completed-projects pb-0">
-                            <div class="container">
-                                <h3>COMPLETED <span class="font-weight-bold">PROJECTS </span></h3>
-                                <div class="row">
-                                    <div class="col-md-4 cons hover-effect">
-                                        <div class="choos">
-                                            <a href="modern-furniture.html#">
-                                                <figure><img src="images/services/s-1.jpg" alt=""></figure>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 cons hover-effect">
-                                        <div class="choos">
-                                            <a href="modern-furniture.html#">
-                                                <figure><img src="images/services/s-6.jpg" alt=""></figure>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 hover-effect">
-                                        <div class="choos">
-                                            <a href="modern-furniture.html#">
-                                                <figure><img src="images/services/s-4.jpg" alt=""></figure>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
