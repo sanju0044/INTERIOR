@@ -71,114 +71,19 @@
                 </div>
                 <div class="portfolio col-xl-12">
                     <div class="slick-lancers">
-                        <div class="agents-grid" data-aos="fade-up">
-                            <a href="project-details.html" class="recent-16">
-                                <div class="recent-img16 img-center" style="background-image: url(images/single-property/s-1.jpg);"></div>
-                                <div class="recent-content"></div>
-                                <div class="recent-details">
-                                    <div class="recent-title">Luxury House</div>
-                                    <div class="recent-price">$230,000</div>
-                                    <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div>
-                                </div>
-                                <div class="view-proper">View Details</div>
-                            </a>
-                        </div>
-                        <div class="agents-grid" data-aos="fade-up">
-                            <a href="project-details.html" class="recent-16">
-                                <div class="recent-img16 img-center" style="background-image: url(images/single-property/s-2.jpg);"></div>
-                                <div class="recent-content"></div>
-                                <div class="recent-details">
-                                    <div class="recent-title">Family Apartment</div>
-                                    <div class="recent-price">$230,000</div>
-                                    <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div>
-                                </div>
-                                <div class="view-proper">View Details</div>
-                            </a>
-                        </div>
-                        <div class="agents-grid" data-aos="fade-up">
-                            <a href="project-details.html" class="recent-16">
-                                <div class="recent-img16 img-center" style="background-image: url(images/single-property/s-3.jpg);"></div>
-                                <div class="recent-content"></div>
-                                <div class="recent-details">
-                                    <div class="recent-title">Villa House</div>
-                                    <div class="recent-price">$230,000</div>
-                                    <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div>
-                                </div>
-                                <div class="view-proper">View Details</div>
-                            </a>
-                        </div>
-                        <div class="agents-grid" data-aos="fade-up">
-                            <a href="project-details.html" class="recent-16">
-                                <div class="recent-img16 img-center" style="background-image: url(images/single-property/s-4.jpg);"></div>
-                                <div class="recent-content"></div>
-                                <div class="recent-details">
-                                    <div class="recent-title">Luxury Condo</div>
-                                    <div class="recent-price">$230,000</div>
-                                    <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div>
-                                </div>
-                                <div class="view-proper">View Details</div>
-                            </a>
-                        </div>
-                        <div class="agents-grid" data-aos="fade-up">
-                            <a href="project-details.html" class="recent-16">
-                                <div class="recent-img16 img-center" style="background-image: url(images/single-property/s-5.jpg);"></div>
-                                <div class="recent-content"></div>
-                                <div class="recent-details">
-                                    <div class="recent-title">Luxury House</div>
-                                    <div class="recent-price">$230,000</div>
-                                    <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div>
-                                </div>
-                                <div class="view-proper">View Details</div>
-                            </a>
-                        </div>
-                        <div class="agents-grid" data-aos="fade-up">
-                            <a href="project-details.html" class="recent-16">
-                                <div class="recent-img16 img-center" style="background-image: url(images/single-property/s-6.jpg);"></div>
-                                <div class="recent-content"></div>
-                                <div class="recent-details">
-                                    <div class="recent-title">Luxury House</div>
-                                    <div class="recent-price">$230,000</div>
-                                    <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div>
-                                </div>
-                                <div class="view-proper">View Details</div>
-                            </a>
-                        </div>
-                        <div class="agents-grid" data-aos="fade-up">
-                            <a href="https://code-theme.com/html/interior/siproject-details.html" class="recent-16">
-                                <div class="recent-img16 img-center" style="background-image: url(images/single-property/s-1.jpg);"></div>
-                                <div class="recent-content"></div>
-                                <div class="recent-details">
-                                    <div class="recent-title">Luxury House</div>
-                                    <div class="recent-price">$230,000</div>
-                                    <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div>
-                                </div>
-                                <div class="view-proper">View Details</div>
-                            </a>
-                        </div>
-                        <div class="agents-grid" data-aos="fade-up">
-                            <a href="project-details.html" class="recent-16">
-                                <div class="recent-img16 img-center" style="background-image: url(images/single-property/s-2.jpg);"></div>
-                                <div class="recent-content"></div>
-                                <div class="recent-details">
-                                    <div class="recent-title">Luxury House</div>
-                                    <div class="recent-price">$230,000</div>
-                                    <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div>
-                                </div>
-                                <div class="view-proper">View Details</div>
-                            </a>
-                        </div>
-                        <div class="agents-grid" data-aos="fade-up">
-                            <a href="project-details.html" class="recent-16">
-                                <div class="recent-img16 img-center" style="background-image: url(images/single-property/s-3.jpg);"></div>
-                                <div class="recent-content"></div>
-                                <div class="recent-details">
-                                    <div class="recent-title">Luxury House</div>
-                                    <div class="recent-price">$230,000</div>
-                                    <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div>
-                                </div>
-                                <div class="view-proper">View Details</div>
-                            </a>
-                        </div>
+                        @foreach ($categories as $dt)
+                            <div class="agents-grid" data-aos="fade-up">
+                                <a href="#" class="recent-16">
+                                    <div class="recent-img16 img-center" style="background-image: url('{{ asset($dt->product_img) }}');"></div>
+                                    <div class="recent-content"></div>
+                                    <div class="recent-details">
+                                        <div class="recent-title">{{ $dt->product_cat }}</div>
+                                        {{-- <div class="recent-price">$230,000</div>
+                                        <div class="house-details">6 Bed <span>|</span> 3 Bath <span>|</span> 720 sq ft</div> --}}
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
