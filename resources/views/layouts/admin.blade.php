@@ -428,7 +428,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Reset sub-section to default
         subSectionSelect.value = '';
     }
 
