@@ -54,14 +54,13 @@
                                     <div class="col-md-12 pdb-2">
                                         <img src="{{ asset('storage/' . $data->img) }}" alt="">
                                     </div>
-                                    {{-- <div class="col-md-6">
+                                    <div class="col-md-6">
                                         <img src="images/services/s-7.jpg" alt="">
-                                    </div> --}}
+                                    </div>
                                 </div>
                                 <div class="service-text">
-                                    <h3 class="mt-4">{{ $data->category->product_cat }}  <span class="font-weight-bold"> {{ $data->solutions->solution }}</span></h3>
-                                    <p class="mb-4">{{!! $data->description !!}}</p>
-
+                                    <h3 class="mt-4">{{ $data->category->product_cat }}  <span class="font-weight-bold"> {  { $data->solutions->solution }}</span></h3>
+                                    <p class="mb-4">{!! $data->description !!}</p>
                                 </div>
                             </div>
                         </div>
