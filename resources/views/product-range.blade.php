@@ -205,60 +205,7 @@
 
        @include('footer')
 
-        <!-- ARCHIVES JS -->
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
-        <script src="{{ asset('js/tether.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('js/mmenu.min.js') }}"></script>
-        <script src="{{ asset('js/mmenu.js') }}"></script>
-        <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
-        <script src="{{ asset('js/smooth-scroll.min.js') }}"></script>
-        <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
-        <script src="{{ asset('js/lightcase.js') }}"></script>
-        <script src="{{ asset('js/owl.carousel.js') }}"></script>
-        <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
-        <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
-        <script src="{{ asset('js/inner-script.js') }}"></script>
-        <script>
-            $(window).on('scroll load', function() {
-                $("#header.cloned #logo img").attr("src", $('#header #logo img').attr('data-sticky-logo'));
-            });
-
-        </script>
-        <script>
-            $('.style1').owlCarousel({
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    400: {
-                        items: 1,
-                        margin: 20
-                    },
-                    500: {
-                        items: 1,
-                        margin: 20
-                    },
-                    768: {
-                        items: 2,
-                        margin: 20
-                    },
-                    991: {
-                        items: 2,
-                        margin: 20
-                    },
-                    1000: {
-                        items: 3,
-                        margin: 20
-                    }
-                }
-            });
-
-        </script>
+        @include('js')
 
     </div>
     <!-- Wrapper / End -->
