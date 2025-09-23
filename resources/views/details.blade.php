@@ -55,27 +55,24 @@
                                         <img src="{{ asset('storage/' . $data->img) }}" alt="">
                                     </div>
                                      <div class="completed-projects pb-0">
-                                        <div class="container">
-                                            {{-- <h3>COMPLETED <span class="font-weight-bold">PROJECTS </span></h3> --}}
-                                            <div class="row">
-                                                @php
-                                                    $images = is_string($data->multi_img) ? json_decode($data->multi_img, true) : $data->multi_img;
-                                                @endphp
+                                        <div class="row">
+                                            @php
+                                                $images = is_string($data->multi_img) ? json_decode($data->multi_img, true) : $data->multi_img;
+                                            @endphp
 
-                                                @if (!empty($images))
-                                                    @foreach ($images as $img)
-                                                        <div class="col-md-2 cons hover-effect">
-                                                            <div class="choos">
-                                                                <a href="{{ asset('storage/' . $img) }}" data-rel="lightcase:gallery">
-                                                                    <figure>
-                                                                        <img src="{{ asset('storage/' . $img) }}" alt="product image" class="img-fluid" style="height:100px;">
-                                                                    </figure>
-                                                                </a>
-                                                            </div>
+                                            @if (!empty($images))
+                                                @foreach ($images as $img)
+                                                    <div class="col-md-2 cons hover-effect">
+                                                        <div class="choos">
+                                                            <a href="{{ asset('storage/' . $img) }}" data-rel="lightcase:gallery">
+                                                                <figure>
+                                                                    <img src="{{ asset('storage/' . $img) }}" alt="product image" class="img-fluid" style="height:100px;">
+                                                                </figure>
+                                                            </a>
                                                         </div>
-                                                    @endforeach
-                                                @endif
-                                            </div>
+                                                    </div>
+                                                @endforeach
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
