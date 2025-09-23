@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -8,21 +8,20 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
-        <!-- Scripts -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+          <!-- Styles -->
+          <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+          @livewireStyles
 
+          <!-- Scripts -->
+          <script src="{{ asset('js/app.js') }}" defer></script>
 
-        @livewireStyles
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
-
         @livewireScripts
-        <script src="{{ asset('js/app.js') }}" defer></script>
     </body>
 </html>
