@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('product_cat_id');
             $table->integer('provide_solution_id');
-            $table->string('all_solution');
+            $table->string('multi_img')->nullable();
             $table->string('img')->nullable();
             $table->longText('description')->nullable();
             $table->timestamps();

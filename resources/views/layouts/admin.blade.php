@@ -412,7 +412,32 @@
         }
     });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const sectionSelect = document.querySelector('#product_cat_id');
+    const subSectionSelect = document.querySelector('#provide_solution_id');
 
+    function updateSubSections() {
+        const selectedValue = sectionSelect.value;
+
+        subSectionSelect.querySelectorAll('option').forEach(option => {
+            if (option.dataset.fromDependent === selectedValue) {
+                option.style.display = 'block';
+            } else if (!option.disabled) {
+                option.style.display = 'none';
+            }
+        });
+
+        // Reset sub-section to default
+        subSectionSelect.value = '';
+    }
+
+    sectionSelect.addEventListener('change', updateSubSections);
+
+    // Initialize
+    updateSubSections();
+});
+</script>
 
 </body>
 <!--end::Body-->

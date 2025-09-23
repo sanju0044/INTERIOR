@@ -57,12 +57,12 @@
                             <div class="item mb-30">
                                 <div class=service-box>
                                     <figure class="img-box">
-                                        <a href="residental-interior.html"><img src="{{ asset($pr->provide_solutions_img) }}" alt="" style="height: 260px;"></a>
+                                        <a href="#"><img src="{{ asset($pr->provide_solutions_img) }}" alt="" style="height: 260px;"></a>
                                         <figcaption class="default-overlay-outer">
                                             <div class="inner">
                                                 <div class="content-layer">
-                                                    <a class="this-link btn btn-primary" href="residental-interior.html" data-toggle="modal" data-target="#exampleModal">Enquery</a>
-                                                    <a class="btn btn-secondary mt-5" href="/products-details/{{ encrypt($pr->id) }}">Details&nbsp;&nbsp;&nbsp;</a>
+                                                    <a class="this-link btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal">Enquery</a>
+                                                    <a class="btn btn-secondary mt-5" href="/details/{{ encrypt($pr->id) }}">Details&nbsp;&nbsp;&nbsp;</a>
                                                  </div>
                                             </div>
                                         </figcaption>

@@ -35,7 +35,13 @@
                                                         <td>{{ $loop->index+1 }}</td>
                                                         <td>{{ $pd->category->product_cat }}</td>
                                                         <td>{{ $pd->solutions->solution ?? '' }}</td>
-                                                        <td>{{ $pd->all_solution }}</td>
+                                                        <td>
+                                                            @if($pd->multi_img)
+                                                                @foreach(json_decode($pd->multi_img, true) as $img)
+                                                                    <img src="{{ asset('storage/' . $img) }}" alt="Product Image" width="80" height="80">
+                                                                @endforeach
+                                                            @endif
+                                                        </td>
                                                         <td> <img src="{{ asset('storage/' . $pd->img) }}" alt="Product Image" width="80"></td>
                                                         <td>{{ $pd->description }}</td>
                                                         <td>
@@ -89,7 +95,7 @@
                         <div class="mb-3 col-md-6">
                             <label class="form-label">Product Category</label>
                             <select name="product_cat_id" id="product_cat_id" class="form-control">
-                                <option value="">— Choose —</option>
+                                <option value="" data-dependent-selector="#provide_solution_id">— Choose —</option>
                                 @foreach ($data_cat as $dc)
                                     <option value="{{ $dc->id }}">{{ $dc->product_cat }}</option>
                                 @endforeach
@@ -101,21 +107,22 @@
                             <select name="provide_solution_id" id="provide_solution_id" class="form-control">
                                 <option value="">— Choose —</option>
                                 @foreach ($data_pov_sol as $dps)
-                                    <option value="{{ $dps->id }}">{{ $dps->solution }}</option>
+                                    <option data-from-dependent="{{ $dps->all_product_id }}" value="{{ $dps->id }}">{{ $dps->solution }}</option>
                                 @endforeach
                             </select>
                         </div>
-
                         <div class="mb-3 col-md-6">
-                            <label class="form-label">All Solution</label>
-                            <input type="text" name="all_solution" id="all_solution" class="form-control" />
-                        </div>
-
-                        <div class="mb-3 col-md-6">
-                            <label class="form-label">Image</label>
+                            <label class="form-label">Image Upload</label>
                             <input type="file" name="img" class="form-control" />
                             <div id="preview_product_image" class="mt-2"></div>
                         </div>
+
+                        <div class="mb-3 col-md-6">
+                            <label class="form-label">Multiple Image Upload</label>
+                            <input type="file" name="multi_img[]" class="form-control" multiple />
+                            <div id="preview_multiple_product_image" class="mt-2"></div>
+                        </div>
+
 
                         <div class="mb-3 col-md-12">
                             <label class="form-label">Product Description</label>
