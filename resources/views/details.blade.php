@@ -59,7 +59,7 @@
                                     </div> --}}
                                 </div>
                                 <div class="service-text">
-                                    <h3 class="mt-4">SERVICE <span class="font-weight-bold">{ $data->category->product_cat }} - {{ $data->solutions->solution }}</span></h3>
+                                    <h3 class="mt-4">SERVICE <span class="font-weight-bold">{{ $data->category->product_cat }} - {{ $data->solutions->solution }}</span></h3>
                                     <p class="mb-4">{{!! $data->description !!}}</p>
 
                                 </div>
