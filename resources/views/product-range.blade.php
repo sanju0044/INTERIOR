@@ -57,7 +57,7 @@
                             <div class="item mb-30">
                                 <div class=service-box>
                                     <figure class="img-box">
-                                        <a href="#"><img src="{{ asset($pr->provide_solutions_img) }}" alt="" style="height: 260px;"></a>
+                                        <a href="#"><img src="{{ asset($pr->product_img) }}" alt="" style="height: 260px;"></a>
                                         <figcaption class="default-overlay-outer">
                                             <div class="inner">
                                                 <div class="content-layer">
