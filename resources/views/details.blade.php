@@ -28,7 +28,7 @@
         <section class="headings">
             <div class="text-heading">
                 <div class="container">
-                    <h1 class="text-center">{{ $data->all_solution }}</h1>
+                    <h1 class="text-center">{{ $data->category->product_cat }} - {{ $data->solutions->solution }}</h1>
                 </div>
             </div>
         </section>
@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <a href="index.html">Home</a><span>»</span><span>{{ $data->all_solution }}</span>
+                        <a href="index.html">Home</a><span>»</span><span>{{ $data->category->product_cat }} - {{ $data->solutions->solution }}</span>
                     </div>
                 </div>
             </div>
@@ -59,9 +59,9 @@
                                     </div> --}}
                                 </div>
                                 <div class="service-text">
-                                    <h3 class="mt-4">SERVICE <span class="font-weight-bold">OVERVIEW</span></h3>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam quod tempora a nisi esse magnam nulla quas! Error praesentium, vero dolorum laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit.</p>
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit, alias fuga aliquam quod tempora a nisi esse magnam nulla quas! Error praesentium, vero dolorum laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rerum beatae consequatur, totam fugit.</p>
+                                    <h3 class="mt-4">SERVICE <span class="font-weight-bold">{ $data->category->product_cat }} - {{ $data->solutions->solution }}</span></h3>
+                                    <p class="mb-4">{{!! $data->description !!}}</p>
+
                                 </div>
                             </div>
                         </div>
