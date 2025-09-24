@@ -145,7 +145,7 @@
                                         </div>
                                     </div>
                                      <a class="" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                                    🔒 For The Best Price
+                                    For The Best Price
                                     </a>
                                 </div>
                             </div>
