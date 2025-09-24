@@ -145,6 +145,9 @@
                                         </div>
                                     </div>
                                      <button class="this-link btn btn-lg btn-block btn-primary mt-5" type="button data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"> 🔒 For The Best Price</button>
+                                     <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                                    GET FREE QUOTE
+                                    </a>
                                 </div>
                             </div>
                         </div>
