@@ -144,7 +144,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                     <a class="this-link btn btn-lg btn-block btn-primary mt-5" href="residental-interior.html" data-toggle="modal" data-target="#exampleModal"> 🔒 For The Best Price</a>
+                                     <a class="this-link btn btn-lg btn-block btn-primary mt-5" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"> 🔒 For The Best Price</a>
                                 </div>
                             </div>
                         </div>
