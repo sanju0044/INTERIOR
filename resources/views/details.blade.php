@@ -268,6 +268,61 @@
 
     </div>
     <!-- Wrapper / End -->
+      <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content shadow-lg border-0 rounded-4">
+
+                            <!-- Header -->
+                            <div class="modal-header bg-gradient text-white text-center d-block">
+                                <h4 class="modal-title fw-bold">✨ Get Your Free Design Consultation ✨</h4>
+                                <p class="mb-0 small">Fill in your details and we’ll get back to you within 24 hours!</p>
+                            </div>
+
+                            <!-- Body -->
+                            <div class="modal-body p-4">
+                                <form>
+                                <!-- Name -->
+                                <div class="form-group mb-3">
+                                    <label class="fw-semibold">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Enter your name" required>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="form-group mb-3">
+                                    <label class="fw-semibold">Phone Number <span class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control form-control-lg" placeholder="Enter your phone number" required>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-group mb-3">
+                                    <label class="fw-semibold">Email Address</label>
+                                    <input type="email" class="form-control form-control-lg" placeholder="Enter your email">
+                                </div>
+
+                                <!-- Message -->
+                                <div class="form-group mb-3">
+                                    <label class="fw-semibold">Your Requirements</label>
+                                    <textarea class="form-control" rows="3" placeholder="Briefly describe your project..."></textarea>
+                                </div>
+
+                                </form>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="modal-footer d-flex justify-content-between px-4">
+                                <button type="button" class="btn btn-outline-secondary px-4 py-2" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary px-4 py-2">🚀 Submit Inquiry</button>
+                            </div>
+
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+       </div>
 </body>
 
 </html>
