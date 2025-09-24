@@ -144,7 +144,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                     <a class="btn btn-lg btn-block btn-primary mt-5" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                                     <a class="" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
                                     🔒 For The Best Price
                                     </a>
                                 </div>
