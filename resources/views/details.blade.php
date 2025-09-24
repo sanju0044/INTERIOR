@@ -211,6 +211,7 @@
         @include('footer')
 
         <!-- ARCHIVES JS -->
+         <script src="{{ asset('js/script.js') }}"></script>
         <script src="{{ asset('js/jquery.min.js') }}"></script>
         <script src="{{ asset('js/tether.min.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
